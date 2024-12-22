@@ -7,10 +7,12 @@ function CardBox({ displayedCards, handleCardClick }) {
         <div
           key={card.id}
           className="card"
-          style={{ backgroundColor: card.color }}
           onClick={() => handleCardClick(card)}
+          style={{
+            backgroundImage: `url(${card.imageUrl})`,
+            backgroundSize: "cover",
+          }}
         >
-          {card.id}
         </div>
       ))}
     </div>
