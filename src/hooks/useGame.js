@@ -11,7 +11,7 @@ const useGame = () => {
 
   useEffect(() => {
     const initializeCards = () => {
-      const generatedCards = Array.from({ length: 300 }, (_, index) => ({
+      const generatedCards = Array.from({ length: 100 }, (_, index) => ({
         id: index + 1,
         imageUrl: `https://picsum.photos/id/${index + 1}/200/200`,
       }));
